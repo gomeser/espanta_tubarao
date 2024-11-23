@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PROJETO ESPANTA TUBARÃO</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+
+<body>
+    <div class="tela">
+        <aside>
+            <div class="title">
+                <img src="../images/logoplataform.png" alt="image">
+
+                <div class="text">
+                    <p>A.C.E Consultoria</p>
+                    <span>Sua empresa na palma da sua mão</span>
+                </div>
+            </div>
+
+            <div class="pesquisa">
+                <form action="" class="barra-de-pesquisa">
+                    <img src="../images/search.png" alt="image">
+                    <input type="text" placeholder="Faça sua pesquisa aqui">
+                </form>
+                <div class="container-filtro">
+                    <img src="../images/filter.png" alt="image">
+                </div>
+            </div>
+
+            <nav class="menu">
+                <div class="container">
+                    <img src="../images/home.png" alt="image">
+                    <a href="">Início</a>
+                </div>
+                <div class="container">
+                    <img src="../images/funcionario.png" alt="image">
+                    <a href="">Inovação</a>
+                </div>
+                <div class="container">
+                    <img src="../images/funcionario.png" alt="image">
+                    <a href="">Institucional</a>
+                </div>
+                <div class="container">
+                    <img src="../images/funcionario.png" alt="image">
+                    <a href="">Marketing e vendas</a>
+                </div>
+                <div class="container">
+                    <img src="../images/funcionario.png" alt="image">
+                    <a href="">Projetos</a>
+                </div>
+                <div class="container">
+                    <img src="../images/funcionario.png" alt="image">
+                    <a href="">Pessoas e cultura</a>
+                </div>
+                <div class="container">
+                    <img src="../images/funcionario.png" alt="image">
+                    <a href="">Financeiro / Estratégia</a>
+                </div>
+            </nav>
+
+            <nav class="menu" style="border-bottom: none;">
+                <div class="container">
+                    <img src="../images/chatbot.png" alt="image">
+                    <a href="">Tira dúvidas</a>
+                </div>
+                <div class="container">
+                    <img src="../images/materials.png" alt="image">
+                    <a href="">Materiais extras</a>
+                </div>
+            </nav>
+        </aside>
+
+        <section class="home scroll">
+            <div class="perfil">
+                <div class="people">
+                    <img src="../images/perfil.png" alt="image">
+                    <p>Espanta Tubarão</p>
+                </div>
+
+                <img src="../images/bell.png" alt="image">
+            </div>
+
+            <div class="graficos">
+                <div id="tree-container"></div>
+                <canvas id="myChart"></canvas>
+            </div>
+
+            <div class="destaques">
+                <div class="faturamento">
+                    <div class="mensal">
+                        <h3>FATURAMENTO NOVEMBRO</h3>
+                        <p><span>R$</span> 250.000<span>,00</span></p>
+                    </div>
+
+                    <div class="destaques-faturamento">
+                        <h3>PROJETOS DESTAQUE</h3>
+                        <div class="container-projetos">
+                            <div class="maior-projeto">
+                                <!-- <img src="../images/sadia.png" alt=""> -->
+                            </div>
+                            <div class="maior-projeto">
+                                <!-- <img src="../images/sadia.png" alt=""> -->
+                            </div>
+                            <div class="maior-projeto">
+                                <!-- <img src="../images/sadia.png" alt=""> -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="funcionarios">
+                    <h2>DESTAQUES DA SEMANA</h2>
+                    <div class="container-pessoas">
+                        <div class="funcionario">
+                            <div class="perfil-funcionario">
+                                <img src="../images/person.png" alt="image">
+                                <p>Espanta Tubarão</p>
+                                <span class="bom-func">
+                                    <img src="../images/yellowstar.png" alt="image" class="img-av">
+                                    9.8
+                                </span>
+                            </div>
+
+                            <p class="dado">17.500,00</p>
+                        </div>
+                        <div class="funcionario">
+                            <div class="perfil-funcionario">
+                                <img src="../images/person.png" alt="image">
+                                <p>Espanta Tubarão</p>
+                                <span class="bom-func">
+                                    <img src="../images/yellowstar.png" alt="image" class="img-av">
+                                    9.8
+                                </span>
+                            </div>
+
+                            <p class="dado">17.500,00</p>
+                        </div>
+                        <div class="funcionario">
+                            <div class="perfil-funcionario">
+                                <img src="../images/person.png" alt="image">
+                                <p>Espanta Tubarão</p>
+                                <span class="bom-func">
+                                    <img src="../images/yellowstar.png" alt="image" class="img-av">
+                                    9.8
+                                </span>
+                            </div>
+
+                            <p class="dado">17.500,00</p>
+                        </div>
+                    </div>
+
+                    <div class="avaliacao">
+                        <button class="ver-todos button">
+                            Ver o ranking
+                        </button>
+
+                        <p class="ver-av-func">> Minha avaliação</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <div class="ranking-geral">
+        <img src="../images/close.png" alt="image" class="close close-rank">
+        <div class="funcionarios scroll">
+            <h2>DESTAQUES DA SEMANA</h2>
+            <div class="container-pessoas">
+                <div class="funcionario">
+                    <div class="perfil-funcionario">
+                        <img src="../images/person.png" alt="image">
+                        <p>Espanta Tubarão</p>
+                        <span class="bom-func">
+                            <img src="../images/yellowstar.png" alt="image" class="img-av">
+                            9.8
+                        </span>
+                    </div>
+
+                    <p class="dado">17.500,00</p>
+                </div>
+                <div class="funcionario">
+                    <div class="perfil-funcionario">
+                        <img src="../images/person.png" alt="image">
+                        <p>Espanta Tubarão</p>
+                        <span class="bom-func">
+                            <img src="../images/yellowstar.png" alt="image" class="img-av">
+                            9.8
+                        </span>
+                    </div>
+
+                    <p class="dado">17.500,00</p>
+                </div>
+                <div class="funcionario">
+                    <div class="perfil-funcionario">
+                        <img src="../images/person.png" alt="image">
+                        <p>Espanta Tubarão</p>
+                        <span class="bom-func">
+                            <img src="../images/yellowstar.png" alt="image" class="img-av">
+                            9.8
+                        </span>
+                    </div>
+
+                    <p class="dado">17.500,00</p>
+                </div>
+                <div class="funcionario">
+                    <div class="perfil-funcionario">
+                        <img src="../images/person.png" alt="image">
+                        <p>Espanta Tubarão</p>
+                        <span class="bom-func">
+                            <img src="../images/yellowstar.png" alt="image" class="img-av">
+                            9.8
+                        </span>
+                    </div>
+
+                    <p class="dado">17.500,00</p>
+                </div>
+                <div class="funcionario">
+                    <div class="perfil-funcionario">
+                        <img src="../images/person.png" alt="image">
+                        <p>Espanta Tubarão</p>
+                        <span class="bom-func">
+                            <img src="../images/yellowstar.png" alt="image" class="img-av">
+                            9.8
+                        </span>
+                    </div>
+
+                    <p class="dado">17.500,00</p>
+                </div>
+                <div class="funcionario">
+                    <div class="perfil-funcionario">
+                        <img src="../images/person.png" alt="image">
+                        <p>Tubarão</p>
+                        <span class="mau-func">
+                            <img src="../images/redstar.png" alt="image" class="img-av">
+                            6.5
+                        </span>
+                    </div>
+
+                    <p class="dado">12.500,00</p>
+                </div>
+                <div class="funcionario">
+                    <div class="perfil-funcionario">
+                        <img src="../images/person.png" alt="image">
+                        <p>Tubarão</p>
+                        <span class="mau-func">
+                            <img src="../images/redstar.png" alt="image" class="img-av">
+                            6.5
+                        </span>
+                    </div>
+
+                    <p class="dado">12.500,00</p>
+                </div>
+                <div class="funcionario">
+                    <div class="perfil-funcionario">
+                        <img src="../images/person.png" alt="image">
+                        <p>Tubarão</p>
+                        <span class="mau-func">
+                            <img src="../images/redstar.png" alt="image" class="img-av">
+                            6.5
+                        </span>
+                    </div>
+
+                    <p class="dado">12.500,00</p>
+                </div>
+                <div class="funcionario">
+                    <div class="perfil-funcionario">
+                        <img src="../images/person.png" alt="image">
+                        <p>Tubarão</p>
+                        <span class="mau-func">
+                            <img src="../images/redstar.png" alt="image" class="img-av">
+                            6.5
+                        </span>
+                    </div>
+
+                    <p class="dado">12.500,00</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="avalia-person">
+        <img src="../images/close.png" alt="image" class="close close-func">
+        <div class="avaliacao-func">
+            <div class="title">
+                <img src="../images/perfil.png" alt="images">
+                <div class="text">
+                    <h2>Espanta Tubarão</h2>
+                    <p>CEO da empresa</p>
+                </div>
+            </div>
+            <span class="bom-func">
+                <img src="../images/yellowstar.png" alt="image" class="img-av">
+                9.8 de avaliação organizacional e operacional
+            </span>
+            <div class="resumo">
+                <h3>Resumo do mês</h3>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis voluptate neque, est fugiat explicabo cumque architecto soluta animi, 
+                    quod ab aut facere temporibus placeat. Molestias fugiat eaque placeat totam minus.
+                </p>
+            </div>
+            <button class="ver-todos button">
+                Fazer a avaliação da empresa
+            </button>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
